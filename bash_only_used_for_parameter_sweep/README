@@ -1,0 +1,66 @@
+==================================================================
+## Synopsis
+==================================================================
+## bash_only_used_for_parameter_sweep - Assignment for the Fundamentals of Programming COMP1005, Semester 2, 2022
+
+==================================================================
+## Contents
+
+sweepM.sh - Bash script for running parameter sweep and automation (using Moore movement)
+sweepV.sh - Bash script for running parameter sweep and automation (using von Neumann movement)
+swamp.py - Class definitions for the simulation Swamp of Life
+swampLife.py - Basic simulation of swamp life for assignment, S2 2022
+terrain.csv - Data files for the terrain used in the simulation Swamp of Life
+README - README file containing the essential information about the program
+
+==================================================================
+## User Guide (For running parameter sweep)
+
+Inputting data on the command line can be mundane if the users want to run a series of simulations using a set of different parameters. Therefore, a bash script can be helpful in such a situation to automate the workflows (Lecture 8: Scripts and automation, 2022).  
+
+The first bash script: “sweepM.sh” utilises the Moore movement pattern.
+The second bash script: “sweepV.sh” utilises the von Neumann movement pattern.
+
+*Hints: 
+<low_> is the start value of a variable
+<high_> is the stop value of a variable 
+<step_> is the step value of a variable
+
+
+Scenario 1 - To run the parameter sweep using the “Moore” movement pattern, make sure users are in the "bash_only_used_for_parameter_sweep" directory, then, on the command line, input: 
+
+$ bash sweepM.sh <low_duck> <high_duck> <step_duck> <low_newt> <high_newt> <step_newt> <low_shrimp> <high_shrimp> <step_shrimp> <low_alga> <high_alga> <step_alga> <low_rock> <high_rock> <step_rock> <low_time> <high_time > <step_time>
+
+#Example: bash sweepM.sh 5 10 5 5 10 5 5 10 5 5 10 5 3 6 3 5 15 5
+
+
+Scenario 2 - To run the parameter sweep using the “von Neumann” movement pattern, make sure users are in the "bash_only_used_for_parameter_sweep" directory, then, on the command line, input: 
+
+$ bash sweepV.sh <low_duck> <high_duck> <step_duck> <low_newt> <high_newt> <step_newt> <low_shrimp> <high_shrimp> <step_shrimp> <low_alga> <high_alga> <step_alga> <low_rock> <high_rock> <step_rock> <low_time> <high_time > <step_time>
+
+#Example: bash sweepV.sh 5 10 5 5 10 5 5 10 5 5 10 5 3 6 3 5 15 5
+
+The Output Files - After a parameter sweep is completed, the users can find a directory created with multiple "text files" inside. These auto-generated text files are the outputs of a series of simulations run according to the parameter set by the users. They are shown in the following name format:
+
+- "Swamp_Moore_Duck"$d"_Newt"$n"_Shrimp"$s"_Alga"$a"_Rock"$c"_Timesteps"$t".txt"
+
+- "Swamp_von_Neumann_Duck"$d"_Newt"$n"_Shrimp"$s"_Alga"$a"_Rock"$c"_Timesteps"$t".txt"
+
+
+==================================================================
+## Dependencies
+
+bash
+sys 
+random
+matplotlib.pyplot
+numpy
+pandas
+time
+swamp.py
+math
+
+==================================================================
+## Version information
+
+09/10/22 - initial version of Assignment programs

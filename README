@@ -1,0 +1,37 @@
+## Synopsis
+
+Swamp of Life - Assignment for the Fundamentals of Programming COMP1005, Semester 2, 2022
+
+## Contents
+
+Simulation_Project_Report_Swamp_of_Life.docx - Project report for the simulation Swamp of Life
+
+FOP_Assignment_Cover_Sheet_15535432.pdf - Signed and dated cover sheet
+
+swamp.py - Class definitions for the simulation Swamp of Life
+
+swampLife.py - Basic simulation of swamp life for assignment, S2 2022
+
+terrain.csv - Data files for the terrain used in the simulation Swamp of Life
+
+bash_only_used_for_parameter_sweep.zip - A zip file containing bash scripts and program files used for running the parameter sweep
+
+README - README file containing the essential information about the program
+
+
+## Dependencies
+
+bash
+sys 
+random
+matplotlib.pyplot
+numpy
+pandas
+time
+swamp.py
+math
+
+
+## Version information
+
+09/10/22 - initial version of Assignment programs
